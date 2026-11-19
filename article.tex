@@ -136,19 +136,20 @@ RMSE = \sqrt{ \frac{1}{N} \sum_{i=1}^{N} \big( a x_i + b y_i + c z_i + d \big)^2
 \caption{Условия проведения эксперимента ($L_{total} = 2.0$~м)}
 \label{tab:conditions}
 \centering
-\begin{tabular}{ccccc}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{ccccl}
 \toprule
 № & Режим & $\alpha$ & $\beta$ & Геометрическая конфигурация \\
 \midrule
-0 & Direct & --- & $0^\circ$ & Контрольный замер (без зеркала) \\
-1 & Mirror & $45^\circ$ & $0^\circ$ & Поворот луча на $90^\circ$, нормальное падение на цель \\
-2 & Mirror & $45^\circ$ & $30^\circ$ & Поворот луча на $90^\circ$ с наклоном мишени \\
-3 & Mirror & $30^\circ$ & $0^\circ$ & Острый угол падения на зеркало \\
-4 & Mirror & $60^\circ$ & $0^\circ$ & Скользящий угол падения на зеркало \\
+0 & Direct & --- & $0^\circ$ & Контроль (без зеркала) \\
+1 & Mirror & $45^\circ$ & $0^\circ$ & Поворот на $90^\circ$, норм. падение \\
+2 & Mirror & $45^\circ$ & $30^\circ$ & Поворот на $90^\circ$, наклон цели \\
+3 & Mirror & $30^\circ$ & $0^\circ$ & Острый угол падения \\
+4 & Mirror & $60^\circ$ & $0^\circ$ & Скользящий угол падения \\
 \bottomrule
 \end{tabular}
 \end{table}
-\vspace{1em}
 
 % ==========================================
 \section{РЕЗУЛЬТАТЫ ЭКСПЕРИМЕНТА}
@@ -156,10 +157,11 @@ RMSE = \sqrt{ \frac{1}{N} \sum_{i=1}^{N} \big( a x_i + b y_i + c z_i + d \big)^2
 
 Сводные количественные показатели качества облака точек, усреднённые по 100 кадрам для каждого сочетания угла падения и типа поверхности, приведены в Таблице~\ref{tab:results}.
 
-\begin{table}[htbp]
+\begin{table*}[htbp]
 \caption{Сводные результаты измерений для мишеней различного альбедо ($L_{total} = 2.0$~м)}
 \label{tab:results}
 \centering
+\small
 \begin{tabular}{cccccc}
 \toprule
 Режим ($\alpha / \beta$) & Мишень & $I_{mean}$, отсч. & RMSE, мм & $D$, точек/м$^2$ & Потери точек, \% \\
@@ -191,7 +193,7 @@ RMSE = \sqrt{ \frac{1}{N} \sum_{i=1}^{N} \big( a x_i + b y_i + c z_i + d \big)^2
 \bottomrule
 \multicolumn{6}{l}{\footnotesize $^*$Примечание: в режиме $60^\circ / 0^\circ$ более 90\% отражений от чёрной мишени упали ниже порога детекции АЦП.}
 \end{tabular}
-\end{table}
+\end{table*}
 
 На рис.~\ref{fig:intensity} показано изменение средней регистрируемой интенсивности $I_{mean}$ при переходе от прямого сканирования к зеркальному тракту с различными углами установки отражателя.
 
